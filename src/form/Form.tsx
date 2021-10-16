@@ -13,13 +13,7 @@ const fields = [
 ];
 
 const Form = () => {
-  const { values, errors, touched, handleChange, setTouched } = useForm(
-    data,
-    fields
-  );
-
-  console.log("values: ", values);
-  console.log("touched: ", touched);
+  const { values, errors, handleChange, setTouched } = useForm(data, fields);
 
   return (
     <form>
